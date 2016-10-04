@@ -19,7 +19,7 @@ class SomethingTest < ActionDispatch::IntegrationTest
     }
 
     # /something.json does not exist
-    get '/something.json', paramst
+    get '/', params
   end
 
   test 'returns smth #2' do
@@ -28,6 +28,6 @@ class SomethingTest < ActionDispatch::IntegrationTest
     }
 
     # /something.json does not exist
-    get '/something.json', params
+    get '/', params
   end
 end
